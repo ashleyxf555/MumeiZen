@@ -14,6 +14,13 @@
             color: #333;
         }
         
+        .banner -img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom:20px;
+        }
+    
         .header {
             text-align: center;
             margin-bottom: 30px;
@@ -23,14 +30,14 @@
             font-size: 36px;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #2a5885;
+            color: #000080;
         }
         
         .subtitle {
             font-size: 28px;
             font-weight: bold;
             margin-bottom: 30px;
-            color: #4a6fa5;
+            color: #000080;
         }
         
         .highlight-box {
@@ -49,13 +56,17 @@
         .benefit-item:before {
             content: "✔";
             color: #4CAF50;
+            font-size: 24px;
             position: absolute;
             left: 0;
+            top: -3px;
+    
         }
         
         .location {
             margin: 20px 0;
             font-weight: bold;
+            color: #ff0000;
         }
         
         .dates {
@@ -120,6 +131,8 @@
     </style>
 </head>
 <body>
+    <img src="6.jpg" alt="Retreat banner" class="banner - img">
+        
     <div class="header">
         <div class="main-title">28-Days Yoga & Meditation Weight-Loss Retreat</div>
         <div class="subtitle">Guaranteed Transformation</div>
@@ -158,7 +171,9 @@
         $3800 (after June 19 for July program or July 31st for Sep program)<br>
         <span class="note">(private room and meals provided, travel expenses not included)</span>
     </div>
-
+    <div class="note">
+        Optional to arrive 1-2 days earlier to get ready for the program.
+    </div>
     <div class="schedule">
         <h3>Daily Schedule:</h3>
         <dl>
@@ -206,11 +221,8 @@
         < img src="3.jpg" alt="Retreat image 3">
         < img src="4.jpg" alt="Retreat image 4">
         < img src="5.jpg" alt="Retreat image 5">
-        < img src="6.jpg" alt="Retreat image 6">
+    
     </div>
 
-    <div class="note">
-        Optional to arrive 1-2 days earlier to get ready for the program.
-    </div>
 </body>
 </html>
