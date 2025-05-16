@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Program Registration</h1>
+    <form action="https://formsubmit.co/ashleyxf@163.com" method="POST">
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name" class="required">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Gender (Optional) -->
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">Prefer not to say</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Age Range -->
+        <div class="form-group">
+            <label for="age-range" class="required">Age Range</label>
+            <select id="age-range" name="age-range" required>
+                <option value="" disabled selected>Select your age</option>
+                <option value="12-18">12-18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-40">30-40</option>
+                <option value="40-50">40-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+
+        <!-- How did you hear about this program? -->
+        <div class="form-group">
+            <label for="hear-about">How did you hear about this program?</label>
+            <textarea id="hear-about" name="hear-about" rows="3"></textarea>
+        </div>
+
+        <!-- Program Attending (Radio Buttons) -->
+        <div class="form-group">
+            <label class="required">Which program are you attending?</label>
+            <div class="radio-group">
+                <input type="radio" id="July20" name="program" value="July20" required>
+                <label for="July20">July20</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="Sep1st"name="program" value="Sep1st">
+                <label for="Sep1st">Sep1st</label>
+            </div>
+        </div>
+
+        <!-- FormSubmit Hidden Fields -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://YOUR_GITHUB_USERNAME.github.io/thankyou.html">
+        <input type="hidden" name="_subject" value="New Program Registration!">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
